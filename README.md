@@ -1,2 +1,2 @@
 # min_deque
-C++ Implementation of a enhanced deque data structure
+C++ Implementation of an enhanced deque data structure
