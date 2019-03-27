@@ -1,20 +1,16 @@
 # op_deque
 An enhanced deque data structure, implemented on C++.
-This deque is capable of calculating the result of applying some function f
-to all the elements on the deque and answering it efficiently.
-
-Definitions are provided on *op_deque.h*, and the implementation on *op_deque.cpp*.
+This deque is capable of answering, in amortized O(F) time,
+the result of applying some function F to all the elements in the deque.
 
 ## Use
 First, include the op_deque with `#include "op_deque.cpp"`
 
-To instantiate a new op_deque, use `op_deque<T, F> Name;`:
+To instantiate a new op_deque, use `op_deque<T, F> Name;`
 
-`T` is the type of the elements in the deque,
-
-`F` is a commutative and associative functor with arity 2,
-
-`Name` is the name of your instance.
+- `T` is the type of the elements in the deque
+- `F` is a commutative and associative functor with arity 2
+- `Name` is the name of your instance.
 
 ## Basic methods
 Method name     | Description
@@ -31,13 +27,13 @@ Method name     | Description
 ## Special methods
 Method name   | Description
 ------------- | -------------
-`get()`       | get, in O(F) amortized time, the result of applying F to the whole deque.
+`get()`       | get, in O(F) amortized time, the result of applying F to the whole deque
 
 ### To do:
-- Study and modify the order of operations to relax the commutative functor requirement.
-- Replace `rastack<T>` with `vector<T>`.
-- Improve the asymptotic constant by optimizing `balance()`.
-- Formal proof.
+- Study and modify the order of operations to relax the commutative functor requirement
+- Replace `rastack<T>` with `vector<T>`
+- Improve the asymptotic constant by optimizing `balance()`
+- Formal proof
 
 
 
