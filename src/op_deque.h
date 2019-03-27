@@ -17,7 +17,7 @@ private:
     void balance();
 public:
     int size();
-    T& operator[](unsigned int i);
+    T operator[](unsigned int i);
     void pop_front();
     void pop_back();
     void push_front(T x);

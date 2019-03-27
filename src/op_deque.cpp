@@ -4,7 +4,7 @@
 template<typename T, typename F> int  op_deque<T, F>::size(){
     return s1.size() + s2.size();
 }
-template<typename T, typename F> T&   op_deque<T, F>::operator[](unsigned int i){
+template<typename T, typename F> T    op_deque<T, F>::operator[](unsigned int i){
     return i < s1.size() ? s1[s1.size()-i-1].first
                          : s2[i-s1.size()].first;
 }

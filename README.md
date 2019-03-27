@@ -1,6 +1,6 @@
 # op_deque
 An enhanced deque data structure, implemented on C++.
-This deque is capable of answering, in amortized O(F) time,
+This deque is capable of answering, in O(F) amortized time,
 the result of applying some function F to all the elements in the deque.
 
 ## Use
