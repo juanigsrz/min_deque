@@ -14,10 +14,10 @@ class op_deque{
 private:
     rastack<std::pair<T,T>> s1, s2;
     F op;
+    void balance();
 public:
     int size();
     T& operator[](unsigned int i);
-    void balance();
     void pop_front();
     void pop_back();
     void push_front(T x);
