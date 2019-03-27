@@ -1,10 +1,14 @@
-template<class T>
-class rastack : public stack<T> {
-    public: using stack<T>::c;
+#define forn(i,n) for(int i=0; i<int(n); i++)
+#define fst first
+#define snd second
+#define op(x,y) min(x,y)
+
+template<typename T>
+class rastack : public std::stack<T> {
+    public: using std::stack<T>::c;
     T &operator[](int i){ return c[i]; }
 };
 
-#define op(x,y) min(x,y)
 template<class T>
 struct op_deque{
     rastack<pair<T,T>> s1, s2;
