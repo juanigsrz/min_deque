@@ -30,10 +30,11 @@ Method name   | Description
 `get()`       | get, in O(F) amortized time, the result of applying F to the whole deque
 
 ### To do:
-- Study and modify the order of operations to relax the commutative functor requirement
-- Replace `rastack<T>` with `vector<T>`
-- Improve the asymptotic constant by optimizing `balance()`
-- Formal proof
+- [ ] Study and modify the order of operations to relax the commutative functor requirement
+- [ ] Replace `rastack<T>` with `vector<T>`
+- [ ] Improve the asymptotic constant by optimizing `balance()`
+- [ ] Formal proof
+- [ ] Proper testing and documentation
 
 
 
